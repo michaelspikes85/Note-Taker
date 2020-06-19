@@ -4,8 +4,6 @@
 
 A simple app that allows you to write and delete notes.
 
-
-
 # Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
@@ -43,4 +41,4 @@ N/A
 
 ## License
 
-<img src="https://img.shields.io/github/license/michaelspikes85/Note-Taker">
+N/A
