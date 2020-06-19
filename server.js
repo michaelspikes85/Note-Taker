@@ -20,6 +20,7 @@ let noteCounter = 0;
 app.get("/api/notes", function(req, res)    {
     try{
         noteEntry = fs.readFileSync("./Develop/db/db.json", "utf8")
+        noteEntry = JSON.parse(noteEntry);
 
     }
 
@@ -77,12 +78,12 @@ app.delete("/api/notes/:id", function(req, res) {
 });
 
 app.get("/notes", function(req, res)    {
-    res.sendFile(path.join(__dirname, "./Develop/public/notes.html"))
+    res.sendFile(path.join(__dirname, "./Develop/public/notes.html"));
 
 });
 
 app.get("/*", function(req, res)    {
-    res.sendFile(path.join(__dirname, "./Develop/public.index.html"));
+    res.sendFile(path.join(__dirname, "./Develop/public/index.html"));
 });
 
 app.listen(PORT, function() {
